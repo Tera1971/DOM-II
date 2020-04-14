@@ -17,14 +17,28 @@ const nav = document.querySelector(".nav-container");
   event.preventDefault();
   alert(`LET'S GOOOO!`);
 })
+const home = document.querySelector('.intro');
+  home.addEventListener('click', function(event){
+   home.style.backgroundColor = 'red';
+  home.style.color = 'white';
+ })
 
+  const letsGo= document.querySelector('.text-content');
+  letsGo.addEventListener('click', function(event){
+    letsGo.style.color = "green";
+  })
 
-// const btn = document.querySelectorAll('.btn')
-//   btn.addEventListener('click', function(event){
-//    btn.style.backgroundColor = 'red';
-//    btn.style.color = "black";
-//  });
+  const destinations = document.querySelector('.content-section');
+  destinations.addEventListener('mouseenter', function(event) {
+    destinations.style.backgroundColor = "yellow";
+    destinations.style.color = "black";
+  })
 
+  const adventure = document.querySelector('.content-destination');
+  adventure.addEventListener('click', function(event) {
+    adventure.style.backgroundColor = "blue";
+    adventure.style.color = "white";
+  })
 
 const footer = document.querySelector('footer');
  footer.addEventListener('mouseenter', function(event){
